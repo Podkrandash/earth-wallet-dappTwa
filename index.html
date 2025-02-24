@@ -28,6 +28,20 @@
     <link rel="alternate icon" href="/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/manifest.json" />
 
+    <style>
+      /* Hide loading screen */
+      .loading-screen, 
+      [data-loading="true"],
+      .slick-loading,
+      .loading {
+        display: none !important;
+      }
+      
+      /* Replace with earth emoji if needed */
+      .loading-screen::before {
+        content: "🌍" !important;
+      }
+    </style>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
