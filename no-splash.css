@@ -1,0 +1,29 @@
+/* Hide all loading screens and spinners */
+.loading-screen,
+[data-loading="true"],
+.slick-loading,
+.loading,
+.Splash,
+[class*="splash"],
+[class*="loading"],
+[class*="Loading"],
+[class*="spinner"],
+[class*="Spinner"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Replace with earth emoji */
+.loading-screen::before,
+.Splash::before,
+[class*="splash"]::before {
+  content: "🌍" !important;
+  font-size: 48px !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 9999 !important;
+} 
